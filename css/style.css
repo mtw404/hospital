@@ -1,0 +1,560 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --os: 'Oswald', sans-serif;
+    --hov: #e23e38;
+    --op: 'Open Sans', sans-serif;
+}
+
+.main-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.main-overlay:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.trans {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.pre_loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe7001;
+    z-index: 9999999999;
+}
+
+.pre_loader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* common head start */
+.notice-head h2 {
+    position: relative;
+    font-weight: 600;
+    font-size: 28px;
+    color: #215a6d;
+}
+
+.notice-head h2::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.notice-head h2:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 54px;
+    height: 2px;
+    background: #ae1010;
+    z-index: 1;
+    bottom: -1px;
+}
+
+.notice-head2 h2 {
+    position: relative;
+    font-weight: 600;
+    font-size: 28px;
+    color: #215a6d;
+}
+
+.notice-head2 h2::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: #eaeaea;
+}
+
+.notice-head2 h2:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 54px;
+    height: 2px;
+    background: #ae1010;
+    z-index: 1;
+    bottom: -1px;
+}
+
+/* common head end */
+
+/* =================common css======================= */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 header part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.header_logo {
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+.header_text h2 {
+    color: #3ca2a2;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 6px;
+    line-height: 111px;
+}
+
+.header_number a {
+    color: #b76262;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 112px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 header part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 menu part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.main-menu {
+    background: linear-gradient(to top, #ae1010 0%, #cf0511 100%);
+}
+
+.main-menu .menu a {
+    color: #fff;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all linear .3s;
+    margin-left: 5px;
+}
+
+.main-menu .menu a:hover {
+    background: #f18d26;
+}
+
+.menu-icon {
+    line-height: 33px;
+    width: 249px;
+}
+
+.menu-icon a {
+    color: #bf0a11;
+    background: #fff;
+    margin-left: 10px;
+    line-height: 27px;
+    border-radius: 50%;
+    width: 27px;
+    height: 26px;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.menu-icon a:hover {
+    color: #fff;
+    background: #fd9800;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 menu part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 banner part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#banner {
+    padding-top: 75px;
+}
+
+.banner-txt h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #215a6d;
+}
+
+.banner-txt h1 {
+    font-size: 46px;
+    font-weight: 600;
+    color: #215a6d;
+    font-style: italic;
+}
+
+.banner-txt p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-right: 193px;
+    color: #215a6d;
+    margin-top: 13px;
+}
+
+.banner-txt a {
+    padding: 15px 25px;
+    background: #92c7a3;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-top: 40px;
+    transition: all linear .3s;
+}
+
+.banner-txt a:hover {
+    background: #f18d26;
+}
+
+.banner-img img {
+    margin-top: 5px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 banner part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 service part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#service {
+    padding: 50px 50px;
+}
+
+.ser-col h4 {
+    color: #3ca2a2;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 16px;
+}
+
+.ser-col p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0px 3px;
+    margin-top: 10px;
+}
+
+.ser-col a {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #92c7a3;
+    padding-top: 13px;
+}
+
+.ser-col a i {
+    color: #c70811;
+    padding-right: 4px;
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 service part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 notice part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#notice {
+    background: #dfece6;
+    padding: 50px 50px;
+}
+
+.notice-con ul {
+    padding-top: 35px;
+}
+
+.notice-con {
+    margin-top: 35px;
+    position: relative;
+}
+.notice-con a {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #c70811;
+    padding-top: 13px;
+}
+
+
+.notice-con img {
+    margin-top: 35px;
+}
+
+.notice-con .play {
+    position: absolute;
+    top: 38%;
+    left: 44%;
+    font-size: 64px;
+    color: #e23e38;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.notice-con ul li i {
+    padding: 0 18px;
+    background: #ae1010;
+    color: #fff;
+    font-size: 13px;
+    line-height: 46px;
+    float: right;
+}
+.notice-con ul li {
+    line-height: 46px;
+    background: #fff;
+    padding-left: 15px;
+    border-bottom: 1px solid #57bbcb;
+}
+.notice-con i{
+    color: #e22b2b;
+}
+.notice-con a {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #c70811;
+    padding-top: 13px;
+}
+
+.notice-con ul li:last-child {
+    border-bottom: none;
+}
+
+.test4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #92c7a3;
+    padding-top: 13px;
+}
+.test4 i{
+  
+    color: #c70811;
+ 
+}
+.test5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    color: #92c7a3;
+    padding-top: 13px;
+}
+.test5 i{
+  
+    color: #c70811;
+ 
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 notice part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 event part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#event {
+    padding: 35px 35px;
+}
+
+.event-con h5 {
+    padding-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #215a6d;
+}
+
+.event-con img {
+    width: 95.85%;
+    margin-right: 30px;
+    margin-bottom: 9px;
+    border: 4px solid #dfece6;
+}
+
+.event-con p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.test1 {
+    margin-top: 32px;
+}
+
+.test2 {
+    margin-top: 46px;
+}
+
+.test3 {
+    margin-top: 13px;
+}
+
+.event-con i {
+    color: #bf0a11;
+    margin-right: 8px;
+}
+
+.event-con a i {
+    color: #c70811;
+    padding-right: -3px;
+}
+
+.event-con a {
+    color: #215a6d;
+}
+
+.event-conex {
+    margin-top: 44px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 event part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 doctor part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#doctor {
+    padding: 50px 50px;
+}
+
+.doctor-img img {
+    border: 4px solid #dfece6;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.doctor-txt h3 {
+    color: #215a6d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.doctor-txt h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #878787;
+}
+
+.doctor-txt p {
+    font-size: 12px;
+    color: #cf0511;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 doctor part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 footer part start
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#footer {
+    padding-top: 50px;
+    background: #353535;
+}
+
+.footer-top {
+    margin-bottom: 22px;
+}
+
+.footer-top h2 {
+    margin-top: 22px;
+    margin-left: 29px;
+    color: #eaeaea;
+}
+
+.footer-menu h3 {
+    padding-bottom: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3ca2a2;
+}
+
+.footer-menu a {
+    color: #fff;
+    padding-right: 6px;
+    border-radius: 1px 47% 1px 1px;
+    transition: all linear .3s;
+}
+
+.footer-menu a:hover {
+    background: #fe7001;
+}
+
+.footer-menu a i {
+    color: #cf0511;
+}
+
+.footer-menu ul li {
+    margin-bottom: 5px;
+}
+
+.footer_bottom {
+    background: #cf0511;
+    color: #c6ded9;
+    text-align: center;
+    line-height: 44px;
+    font-weight: 400;
+    height: 44px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                 footer part end
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
