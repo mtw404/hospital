@@ -11,6 +11,7 @@ $(function () {
     overlayColor: 'rgba(243, 27, 27, 0.623)',
 });
 
+AOS.init();
 
 
 
